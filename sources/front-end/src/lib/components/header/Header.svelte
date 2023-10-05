@@ -6,6 +6,9 @@
     justify-content: center;
     align-items: center;
     font-variant: all-petite-caps;
+    height: var(--header-height);
+
+    background-color: aquamarine;
   }
 </style>
 <header>macaron uni</header>
