@@ -48,7 +48,7 @@ html, body {
   flex: 1 0 100%;
 }
 
-html, body, #app {
+html, body, #app, main {
   height: 100%;
 }
 
