@@ -1,7 +1,7 @@
 :root {
   --main-font-family: "Inter var experimental";
-  --main-color: var(--theme-white);
-  --main-background-color: var(--theme-dark_gray);
+  --main-color: var(--theme-dark_gray);
+  --main-background-color: var(--theme-white);
   --main-grid-gap: max(0.25vh, 0.25vw);
   --main-border-radius: max(0.25vh, 0.25vw);
 
@@ -55,6 +55,7 @@ html, body, #app {
 html {
   font-family: var(--main-font-family);
   background-color: var(--main-background-color);
+  color: var(--main-color);
 }
 
 svg {
