@@ -48,7 +48,9 @@ html, body {
   flex: 1 0 100%;
 }
 
-html, body, #app, main {
+html, body, #app {
+  display: flex;
+  flex-direction: column;
   height: 100%;
 }
 
@@ -56,6 +58,11 @@ html {
   font-family: var(--main-font-family);
   background-color: var(--main-background-color);
   color: var(--main-color);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
 }
 
 svg {
