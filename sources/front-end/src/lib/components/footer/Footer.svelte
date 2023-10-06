@@ -1,10 +1,26 @@
+<script>
+  import MenuIcon from "$lib/icons/MenuIcon.svelte";
+</script>
 <style>
   footer {
     position: sticky;
     bottom: 0px;
-    height: var(--footer-height);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: min(0.5vh, 0.5vw);
+    background-color: aquamarine;
 
-    background-color: aqua;
+    & button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+    }
   }
 </style>
-<footer>menu</footer>
+<footer>
+  <button>
+    <MenuIcon />
+  </button>
+</footer>
