@@ -3,20 +3,12 @@
 </script>
 
 <style>
-  article {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    gap: min(0.5vh, 0.5vw);
-
-    & section {
+    section {
       height: 100px;
       background-color: beige; 
     }
-  }
 </style>
 
-<article>
   <section>
     section #0
   </section>
@@ -35,4 +27,3 @@
   <section>
     section #5
   </section>
-</article>

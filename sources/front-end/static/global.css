@@ -7,9 +7,9 @@
 
   --main-button-height: 8vh;
 
-  --header-hight: 4vh;
+  --header-hight: 6vh; 
   --main-height: 1fr;
-  --footer-height: 4vh;
+  --footer-height: var(--header-hight);
   --footer-background-color: transparent;
 
   --group-height: 20vh;
@@ -48,7 +48,7 @@ html, body {
   flex: 1 0 100%;
 }
 
-html, body, #app {
+html, body {
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -60,9 +60,22 @@ html {
   color: var(--main-color);
 }
 
+#app {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: var(--header-hight) auto var(--footer-height);
+  grid-template-areas:
+  'app-header'
+  'app-content'
+  'app-footer';
+}
+
 main {
+  grid-area: app-content;
   display: flex;
   flex-direction: column;
+  gap: min(0.5vh, 0.5vw);
+  overflow-y: auto;
 }
 
 svg {
