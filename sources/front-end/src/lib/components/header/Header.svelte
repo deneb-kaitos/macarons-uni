@@ -6,6 +6,7 @@
     justify-content: center;
     align-items: center;
     font-variant: all-petite-caps;
+    height: var(--header-heights);
 
     background-color: aquamarine;
   }

@@ -10,6 +10,7 @@
     align-items: center;
     padding: min(0.5vh, 0.5vw);
     background-color: aquamarine;
+    height: var(--footer-height);
 
     & button {
       display: flex;
