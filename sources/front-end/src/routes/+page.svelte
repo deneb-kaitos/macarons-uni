@@ -9,15 +9,7 @@
 </script>
 
 <style>
-  div {
-    display: flex;
-    flex-direction: column;
-    gap: 1vh;
-    padding: min(0.5vw, 0.5vh);
-    justify-content: center;
-    overflow-y: auto;
-  
-    & article {
+    article {
       background-color: brown;
       border-radius: 0.125rem;
       padding: min(0.5vh, 0.5vw);
@@ -26,16 +18,19 @@
       flex: 1 0 auto;
       gap: 1vh;
     }
-  }
 </style>
-<div>
   <article>
     <About />
   </article>
-  <Chef />
-  <Macarons />
-  <Torte />
+  <article>
+    <Chef />
+  </article>
+  <article>
+    <Macarons />
+  </article>
+  <article>
+    <Torte />
+  </article>
   <article>
     <Legal />
   </article>
-</div>

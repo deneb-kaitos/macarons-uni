@@ -3,7 +3,7 @@
 </script>
 
 <style>
-  article {
+  div {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
@@ -22,10 +22,10 @@
   }
 </style>
 
-<article>
+<div>
   <picture>
     <source srcset="https://fakeimg.pl/180x210" media="(orientation: portrait)" />
     <img src="https://fakeimg.pl/180x210" width="180px" height="210px" alt="the Chef" />
   </picture>
   <section>bla-bla-bla bla-bla-bla...</section>
-</article>
+</div>
