@@ -10,7 +10,7 @@
     justify-content: flex-end;
     align-items: center;
     padding: min(0.5vh, 0.5vw);
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
     height: var(--footer-height);
     flex: 1 0 auto;
 
@@ -23,7 +23,7 @@
   }
 </style>
 <footer>
-  <button>
+  <!-- <button>
     <MenuIcon />
-  </button>
+  </button> -->
 </footer>

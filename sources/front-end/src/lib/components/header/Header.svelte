@@ -10,7 +10,7 @@
     height: var(--header-height);
     flex: 1 0 auto;
 
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
   }
 </style>
 <header>macaron uni</header>

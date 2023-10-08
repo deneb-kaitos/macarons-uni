@@ -63,11 +63,11 @@ html {
 #app {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: var(--header-hight) auto var(--footer-height);
+  grid-template-rows: var(--header-hight) auto ;
   grid-template-areas:
   'app-header'
-  'app-content'
-  'app-footer';
+  'app-content';
+  /* 'app-footer'; */
 }
 
 main {
