@@ -1,4 +1,5 @@
 <script>
+  export const prerender = true;
   import MenuIcon from "$lib/icons/MenuIcon.svelte";
 </script>
 <style>
