@@ -52,6 +52,7 @@ html, body {
   display: flex;
   flex-direction: column;
   height: 100%;
+  overflow-y: auto;
 }
 
 html {
@@ -61,13 +62,9 @@ html {
 }
 
 #app {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: var(--header-hight) auto ;
-  grid-template-areas:
-  'app-header'
-  'app-content';
-  /* 'app-footer'; */
+  width: 75%;
+  margin: 0 auto;
+  overflow-y: auto;
 }
 
 main {

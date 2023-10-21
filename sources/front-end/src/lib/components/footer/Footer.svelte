@@ -1,30 +1,30 @@
 <script>
   export const prerender = true;
-  import MenuIcon from "$lib/icons/MenuIcon.svelte";
+
+  import ContactUs from "../contact-us/ContactUs.svelte";
+  import WeAreOpen from "../we-are-open/WeAreOpen.svelte";
 </script>
 <style>
   footer {
     grid-area: app-footer;
-    position: sticky;
-    bottom: 0px;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: min(0.5vh, 0.5vw);
-    /* background-color: aquamarine; */
-    height: var(--footer-height);
-    flex: 1 0 auto;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 1vw;
 
-    & button {
+    & div {
       display: flex;
-      justify-content: center;
-      align-items: center;
-      border-radius: 50%;
+      background-color: brown;
+      flex-direction: column;
     }
   }
 </style>
 <footer>
-  <!-- <button>
-    <MenuIcon />
-  </button> -->
+  <div>
+    <ContactUs />
+  </div>
+  <div>
+    <WeAreOpen />
+  </div>
 </footer>
