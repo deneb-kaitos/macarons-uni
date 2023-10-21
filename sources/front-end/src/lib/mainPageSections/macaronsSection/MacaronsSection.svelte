@@ -1,29 +1,26 @@
 <script>
   export const prerender = true;
+
+  import Section from "$lib/components/section/Section.svelte";
 </script>
 
 <style>
     section {
       height: 100px;
       background-color: beige; 
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
 </style>
 
   <section>
-    section #0
+    <Section
+      title="caps"
+    />
   </section>
   <section>
-    section #1
-  </section>
-  <section>
-    section #2
-  </section>
-  <section>
-    section #3
-  </section>
-  <section>
-    section #4
-  </section>
-  <section>
-    section #5
+    <Section
+      title="fillings"
+    />
   </section>
