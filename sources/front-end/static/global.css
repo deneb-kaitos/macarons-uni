@@ -23,7 +23,7 @@
   box-sizing: border-box;
   contain: content;
   margin: 0;
-  overflow: hidden;
+  /* overflow: hidden; */
   padding: 0;
   /* pointer-events: none; */
   position: relative;
@@ -62,7 +62,7 @@ html {
 }
 
 #app {
-  width: 75%;
+  width: 100%;
   margin: 0 auto;
   overflow-y: auto;
 }
