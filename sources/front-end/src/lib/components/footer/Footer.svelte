@@ -11,12 +11,14 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
-    gap: 1vw;
+    width: 75%;
+    margin: 0 auto;
 
-    & div {
+    & > div {
       display: flex;
-      background-color: brown;
+      /* background-color: brown; */
       flex-direction: column;
+      padding-bottom: 1rem;
     }
   }
 </style>

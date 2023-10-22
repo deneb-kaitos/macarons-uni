@@ -33,6 +33,7 @@
     align-items: stretch;
     font-variant: all-petite-caps;
     height: 5rem;
+    z-index: 1;
 
     & nav {
       display: grid;
