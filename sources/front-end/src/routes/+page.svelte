@@ -5,8 +5,6 @@
   import LegalSection from '$lib/mainPageSections/legalSection/LegalSection.svelte';
 	import TorteSection from '$lib/mainPageSections/torteSection/TorteSection.svelte';
   import MainBanner from '$lib/components/main-banner/MainBanner.svelte';
-
-  export const prerender = true;
 </script>
 
 <style>
