@@ -37,7 +37,7 @@
 
     & nav {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(2, 1fr);
       gap: 0.25rem;
     
       & a {
@@ -53,7 +53,6 @@
 <header>
   <nav>
     <a href="/">home</a>
-    <a href="/contacts">contacts</a>
     <a href="{ isAuthenticated === true ? links.account.href : links.login.href }">{ isAuthenticated === true ? links.account.title : links.login.title }</a>
   </nav>
 </header>
