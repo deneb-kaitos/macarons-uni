@@ -21,6 +21,12 @@ h1, h2 {
       padding: 0.5rem 0;
     }
 
+    & :is(input[type="text"], input[type="email"], textarea) {
+      border: none;
+      border-bottom: 1px solid var(--theme-light_gray);
+      background-color: var(--main-background-color);
+    }
+
 
     & .first-name {
       grid-area: first-name;
