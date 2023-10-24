@@ -1,6 +1,7 @@
 <script>
   import {
     FacebookIcon,
+    HeartIcon,
     InstagramIcon,
     TwitterIcon,
   } from 'svelte-feather-icons';
@@ -10,88 +11,98 @@
 
 <style>
   article {
-    display: flex;
-    flex-direction: column;
-    row-gap: 3rem;
-  
-    & > section {
+    display: grid;
+    grid-template-columns: auto auto 1rem auto auto;
+    grid-auto-rows: 1fr;
+    grid-template-areas:
+      'title title title title title'
+      'first-work-day last-work-day . work-day-start-time work-day-end-time'
+      'first-weekend-day last-weekend-day . weekend-start-time weekend-end-time'
+      'address address address address address'
+      'tel-title . . tel tel'
+      'email-title . . email email'
+      '. . . . icons'
+    ;
+    column-gap: 1rem;
+    row-gap: 1.5rem;
+
+    & > .align-left {
+      justify-content: start;
+    }
+
+    & > .align-right {
+      justify-content: end;
+    }
+
+    & :is(h1, div, a) {
       display: flex;
-      flex-direction: column;
+      align-items: center;
     }
 
-    & > .open-days {
-      gap: 1rem;
+    & > h1 {
+      grid-area: title;
+      justify-content: end;
     }
 
-    & > .open-days > .days-record {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr) 3fr repeat(2, 1fr);
-      grid-template-rows: 1fr;
-      grid-template-areas:
-        'day-from day-to . time-from time-to'
-      ;
-      border-bottom: 1px dotted var(--theme-light_gray_bright);
-
-      & > div {
-        display: flex;
-        align-items: center;
-      }
-
-      & > .day-from {
-        grid-area: day-from;
-      }
-
-      & > .day-to {
-        grid-area: day-to;
-      }
-
-      & > :is(.day-from, .day-to) {
-        justify-content: start;
-      }
-
-      & > :is(.time-from, .time-to) {
-        justify-content: end;
-      }
-
-      & > .time-from {
-        grid-area: time-from;
-      }
-
-      & > .time-to {
-        grid-area: time-to;
-      }
+    & > .first-work-day {
+      grid-area: first-work-day;
     }
 
-    & > .contact-means {
-      display: grid;
-      grid-template-columns: auto 1fr;
-      grid-auto-rows: 1fr;
-      gap: 1rem;
-      grid-template-areas:
-        'phone-caption phone'
-        'email-caption email'
-      ;
-
-      & > .phone-caption {
-        grid-area: phone-caption;
-      }
-
-      & > .phone {
-        grid-area: phone;
-      }
-
-      & > .email-caption {
-        grid-area: email-caption;
-      }
-
-      & > .email {
-        grid-area: email;
-      }
+    & > .last-work-day {
+      grid-area: last-work-day;
+    }
+    
+    & > .work-day-start-time {
+      grid-area: work-day-start-time;
     }
 
-    & > .social-networks {
-      flex-direction: row;
-      column-gap: 0.5rem;
+    & > .work-day-end-time {
+      grid-area: work-day-end-time;
+    }
+
+    & > .first-weekend-day {
+      grid-area: first-weekend-day;
+    }
+
+    & > .last-weekend-day {
+      grid-area: last-weekend-day;
+    }
+    
+    & > .weekend-start-time {
+      grid-area: weekend-start-time;
+    }
+
+    & > .weekend-end-time {
+      grid-area: weekend-end-time;
+    }
+
+    & > .address {
+      grid-area: address;
+    }
+
+    & > .tel-title {
+      grid-area: tel-title;
+    }
+    
+    & > .tel {
+      grid-area: tel;
+    }
+
+    & > .email-title {
+      grid-area: email-title;
+    }
+    
+    & > .email {
+      grid-area: email;
+    }
+
+    & > .icons {
+      grid-area: icons;
+      justify-content: space-between;
+
+      & > :is(:visited, :link) {
+        color: var(--theme-blue);
+      }
     }
   }
 </style>
@@ -100,41 +111,31 @@
   <h1>
     we're open
   </h1>
-  <section class="open-days">
-    <div class="days-record">
-      <div class="day-from">monday</div>
-      <div class="day-to">friday</div>
-      <div class="day-time-sep" />
-      <div class="time-from">11:00</div>
-      <div class="time-to">22:00</div>
-    </div>
-    <div class="days-record">
-      <div class="day-from">saturday</div>
-      <div class="day-to">sunday</div>
-      <div class="day-time-sep" />
-      <div class="time-from">11:00</div>
-      <div class="time-to">17:00</div>
-    </div>
-  </section>
-  <section class="our-address">
-    <span>Some Street 45</span>
-    <span>00000, City, Country</span>
-  </section>
-  <section class="contact-means">
-    <div class="phone-caption">tel:</div>
-    <a href="tel:0123456789" class="phone" target="_blank">0123456789</a>
-    <div class="email-caption">email:</div>
-    <a href="mailto:me@mysite.de" class="email" target="_blank">me@mysite.de</a>
-  </section>
-  <section class="social-networks">
-    <a href="https://www.facebook.com/macarons-uni" target="_blank">
-      <FacebookIcon size="{iconSize}" />
+    <div class="first-work-day align-left">monday</div>
+    <div class="last-work-day align-left">friday</div>
+    <div class="work-day-start-time align-right">11:00</div>
+    <div class="work-day-end-time align-right">22:00</div>
+    <div class="first-weekend-day align-left">saturday</div>
+    <div class="last-weekend-day align-left">sunday</div>
+    <div class="weekend-start-time align-right">11:00</div>
+    <div class="weekend-end-time align-right">17:00</div>
+    <div class="address">
+Some Street 45
+00000, City, Country
+  </div>
+  <div class="tel-title align-left">tel</div>
+  <a class="tel align-right" href="tel:+012345678910123" target="_blank">+012345678910123</a>
+  <div class="email-title align-left">email</div>
+  <a class="email align-right" href="mailto:chef@macarons.uni" target="_blank">chef@macarons.uni</a>
+  <div class="icons">
+    <a class="icon" href="https://www.facebook.com/macarons-uni" target="_blank">
+      <FacebookIcon size={iconSize} />
     </a>
-    <a href="https://instagram.com/macarons-uni" target="_blank">
-      <InstagramIcon size="{iconSize}" />
+    <a class="icon" href="https://instagram.com/macarons-uni" target="_blank">
+      <InstagramIcon size={iconSize} />
     </a>
-    <a href="https://twitter.com/macarons-uni" target="_blank">
-      <TwitterIcon size="48" />
+    <a class="icon" href="https://twitter.com/macarons-uni" target="_blank">
+      <TwitterIcon size={iconSize} />
     </a>
-  </section>
+  </div>
 </article>

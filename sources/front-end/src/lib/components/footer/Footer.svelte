@@ -11,7 +11,7 @@
     position: relative;
     display: grid;
     grid-template-rows: auto 6rem;
-    grid-template-columns: 1fr 3fr 1fr; 
+    grid-template-columns: 1fr 2fr 1fr; 
     grid-template-areas:
       'contact-us . we-are-open'
       'copyright copyright copyright'
