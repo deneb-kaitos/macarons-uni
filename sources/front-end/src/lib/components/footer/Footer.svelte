@@ -7,7 +7,7 @@
 </script>
 <style>
   footer {
-    grid-area: app-footer;
+    grid-area: site-footer;
     position: relative;
     display: grid;
     grid-template-rows: auto 6rem;
@@ -16,8 +16,8 @@
       'contact-us . we-are-open'
       'copyright copyright copyright'
     ;
-    width: 75%;
-    margin: 0 auto;
+    background-color: white;
+    padding: 0 10%;
 
     & > div {
       display: flex;

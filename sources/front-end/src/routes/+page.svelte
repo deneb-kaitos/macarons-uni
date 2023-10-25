@@ -11,19 +11,18 @@
     article {
       /* background-color: brown; */
       border-radius: 0.125rem;
-      padding: min(0.5vh, 0.5vw);
+      /* padding: min(0.5vh, 0.5vw); */
       display: flex;
       flex-direction: column;
       flex: 1 0 auto;
-      gap: 1vh;
-      width: 75%;
-      margin: 0 auto;
+      margin: 0 10%;
     }
     
     .banner {
       width: 100%;
       height: 50vh;
       background-color: yellowgreen; 
+      margin: 0;
     }
 </style>
   <article class="banner">
