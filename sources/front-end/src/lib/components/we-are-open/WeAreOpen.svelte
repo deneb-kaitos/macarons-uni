@@ -10,7 +10,7 @@
 </script>
 
 <style>
-  article {
+  address {
     display: grid;
     grid-template-columns: auto auto 1rem auto auto;
     grid-auto-rows: 1fr;
@@ -23,6 +23,7 @@
       'email-title . . email email'
       '. . . . icons'
     ;
+    font-style: normal;
     column-gap: 1rem;
     row-gap: 1.5rem;
 
@@ -107,7 +108,7 @@
   }
 </style>
 
-<article>
+<address>
   <h1>
     we're open
   </h1>
@@ -138,4 +139,4 @@ Some Street 45
       <TwitterIcon size={iconSize} />
     </a>
   </div>
-</article>
+</address>
