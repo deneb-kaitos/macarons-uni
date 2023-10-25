@@ -1,7 +1,7 @@
 <script>
   import AboutSection from '$lib/mainPageSections/aboutSection/AboutSection.svelte';
   import ChefSection from '$lib/mainPageSections/chefSection/ChefSection.svelte';
-  import MacaronsSection from '$lib/mainPageSections/macaronsSection/AllTimeFavorites.svelte';
+  import AllTimeFavorites from '$lib/mainPageSections/macaronsSection/AllTimeFavorites.svelte';
   import LegalSection from '$lib/mainPageSections/legalSection/LegalSection.svelte';
 	import TorteSection from '$lib/mainPageSections/torteSection/TorteSection.svelte';
   import MainBanner from '$lib/components/main-banner/MainBanner.svelte';
@@ -36,7 +36,7 @@
     <ChefSection />
   </article>
   <article>
-    <MacaronsSection />
+    <AllTimeFavorites />
   </article>
   <article>
     <TorteSection />
