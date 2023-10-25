@@ -2,9 +2,9 @@
   import AboutSection from '$lib/mainPageSections/aboutSection/AboutSection.svelte';
   import ChefSection from '$lib/mainPageSections/chefSection/ChefSection.svelte';
   import AllTimeFavorites from '$lib/mainPageSections/macaronsSection/AllTimeFavorites.svelte';
-  import LegalSection from '$lib/mainPageSections/legalSection/LegalSection.svelte';
 	import SeasonalSection from '$lib/mainPageSections/seasonalSection/Seasonal.svelte';
   import MainBanner from '$lib/components/main-banner/MainBanner.svelte';
+  import WeDeliver from '$lib/mainPageSections/weDeliver/WeDeliver.svelte';
 </script>
 
 <style>
@@ -42,5 +42,5 @@
     <SeasonalSection />
   </article>
   <article>
-    <LegalSection />
+    <WeDeliver />
   </article>
