@@ -9,7 +9,7 @@
     gap: 1rem;
     min-height: 25vh;
 
-    & > div {
+    & > a {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       grid-template-rows: auto 1fr 1fr;
@@ -51,25 +51,25 @@
 </style>
 
 <section>
-  <div class="step0">
+  <a href="/uni/complete-macarons" class="step0">
     <img src="https://fakeimg.pl/200x200" width="200px" height="200px" alt="step 0" />
     <h1>
-      title
+     macarons 
     </h1>
     <div>some description</div>
-  </div>
-  <div class="step1">
+  </a>
+  <a href="/uni/macarons-caps" class="step1">
     <img src="https://fakeimg.pl/200x200" width="200px" height="200px" alt="step 0" />
     <h1>
-      title
+      macaron caps
     </h1>
     <div>some description</div>
-  </div>
-  <div class="step2">
+  </a>
+  <a href="/uni/torten" class="step2">
     <img src="https://fakeimg.pl/200x200" width="200px" height="200px" alt="step 0" />
     <h1>
-      title
+      cakes
     </h1>
     <div>some description</div>
-  </div>
+  </a>
 </section>
