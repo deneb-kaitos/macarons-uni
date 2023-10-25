@@ -11,11 +11,11 @@
 
     & > a {
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-template-rows: auto 1fr 1fr;
+      grid-template-columns: auto 1fr 1fr;
+      grid-template-rows: auto 0 1fr;
       grid-template-areas:
-        '. picture .'
-        '. title .'
+        'picture picture picture'
+        'title title title'
         'description description description'
       ;
       padding: max(1vh, 1vw) max(1vh, 1vw);
@@ -29,6 +29,13 @@
 
       & > h1 {
         grid-area: title;
+        display: flex;
+        bottom: 7vh;
+        height: 5vh;
+        justify-content: center;
+        align-items: center;
+
+        background-color: white;
       }
       
       & > div {
@@ -52,21 +59,21 @@
 
 <section>
   <a href="/uni/complete-macarons" class="step0">
-    <img src="https://fakeimg.pl/200x200" width="200px" height="200px" alt="step 0" />
+    <img src="https://fakeimg.pl/600x600" width="600px" height="600px" alt="step 0" />
     <h1>
      macarons 
     </h1>
     <div>some description</div>
   </a>
   <a href="/uni/macarons-caps" class="step1">
-    <img src="https://fakeimg.pl/200x200" width="200px" height="200px" alt="step 0" />
+    <img src="https://fakeimg.pl/600x600" width="600px" height="600px" alt="step 1" />
     <h1>
       macaron caps
     </h1>
     <div>some description</div>
   </a>
   <a href="/uni/torten" class="step2">
-    <img src="https://fakeimg.pl/200x200" width="200px" height="200px" alt="step 0" />
+    <img src="https://fakeimg.pl/600x600" width="600px" height="600px" alt="step 2" />
     <h1>
       cakes
     </h1>
