@@ -27,6 +27,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      width: 100%;
 
       & > img {
         display: flex;

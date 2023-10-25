@@ -25,7 +25,7 @@
 
 <style>
   header {
-    grid-area: app-header;
+    grid-area: site-header;
     position: sticky;
     top: 0;
     display: flex;
