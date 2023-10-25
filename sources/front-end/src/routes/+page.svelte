@@ -3,7 +3,7 @@
   import ChefSection from '$lib/mainPageSections/chefSection/ChefSection.svelte';
   import AllTimeFavorites from '$lib/mainPageSections/macaronsSection/AllTimeFavorites.svelte';
   import LegalSection from '$lib/mainPageSections/legalSection/LegalSection.svelte';
-	import TorteSection from '$lib/mainPageSections/torteSection/TorteSection.svelte';
+	import SeasonalSection from '$lib/mainPageSections/seasonalSection/Seasonal.svelte';
   import MainBanner from '$lib/components/main-banner/MainBanner.svelte';
 </script>
 
@@ -39,7 +39,7 @@
     <AllTimeFavorites />
   </article>
   <article>
-    <TorteSection />
+    <SeasonalSection />
   </article>
   <article>
     <LegalSection />
