@@ -79,7 +79,7 @@ main {
   grid-area: app-content;
   display: flex;
   flex-direction: column;
-  gap: min(0.5vh, 0.5vw);
+  gap: 2vh;
   overflow-y: auto;
   min-height: 100%;
 }
