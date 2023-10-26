@@ -13,6 +13,7 @@
   label {
     font-size: 1rem;
     color: var(--theme-light_gray_bright);
+    font-variant: all-petite-caps;
   }
 </style>
 

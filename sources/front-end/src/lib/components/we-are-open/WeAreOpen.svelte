@@ -26,7 +26,7 @@
     ;
     font-style: normal;
     column-gap: 1rem;
-    row-gap: 1.5rem;
+    /* row-gap: 1.5rem; */
 
     & > .align-left {
       justify-content: start;
@@ -39,6 +39,10 @@
     & :is(h1, div, a) {
       display: flex;
       align-items: center;
+    }
+
+    & div {
+      font-variant: all-petite-caps;
     }
 
     & > h1 {

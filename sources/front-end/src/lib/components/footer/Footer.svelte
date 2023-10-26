@@ -18,7 +18,7 @@
     background-color: white;
     padding: 0 10%;
 
-    & > div {
+    & > :is(div) {
       display: flex;
       flex-direction: column;
     }
