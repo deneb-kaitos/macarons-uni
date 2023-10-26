@@ -1,6 +1,6 @@
 <script>
   import H1 from "$lib/controls/h1/H1.svelte";
-
+  import H2 from "$lib/controls/h2/H2.svelte";
 </script>
 
 <style>
@@ -62,14 +62,14 @@
   <H1>all time favorites</H1>
   <div class="fav0">
     <img src="https://fakeimg.pl/800x800" width="800px" height="800px" alt="0" />
-    <h2>some macaron</h2>
+    <H2>some macaron</H2>
   </div>
   <div class="fav1">
     <img src="https://fakeimg.pl/800x800" width="800px" height="800px" alt="1" />
-    <h2>some cap</h2>
+    <H2>some cap</H2>
   </div>
   <div class="fav2">
     <img src="https://fakeimg.pl/800x800" width="800px" height="800px" alt="2" />
-    <h2>some cake</h2>
+    <H2>some cake</H2>
   </div>
 </section>

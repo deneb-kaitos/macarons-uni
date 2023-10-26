@@ -1,6 +1,8 @@
 <script>
   export const prerender = true;
+
   import H1 from "$lib/controls/h1/H1.svelte";
+  import H2 from "$lib/controls/h2/H2.svelte";
 </script>
 
 <style>
@@ -43,9 +45,9 @@
     <H1>
       special of the week
     </H1>
-    <h2>
+    <H2>
       your new guilty pleasure
-    </h2>
+    </H2>
   </div>
   <div class="picture">
     <img src="https://fakeimg.pl/1400x400" width="1400px" height="400px" alt="seasonal" />

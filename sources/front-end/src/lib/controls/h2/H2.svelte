@@ -1,14 +1,14 @@
 <style>
-  h1 {
+  h2 {
     padding: 1rem 0;
     font-variant: all-petite-caps;
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
   @supports (font-variation-settings: normal) {
     h1 {
       font-variation-settings:
-        "wght" 900
+        "wght" 700
       ;
       font-feature-settings:
         "case" 0,
@@ -44,6 +44,6 @@
   }
 </style>
 
-<h1>
+<h2>
   <slot />
-</h1>
+</h2>

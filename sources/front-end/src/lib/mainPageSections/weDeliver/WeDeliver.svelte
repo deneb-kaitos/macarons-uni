@@ -1,3 +1,7 @@
+<script>
+  import H1 from "$lib/controls/h1/H1.svelte";
+  import H2 from "$lib/controls/h2/H2.svelte";
+</script>
 <style>
   section {
     display: grid;
@@ -27,9 +31,9 @@
 <section>
   <img src="https://fakeimg.pl/1500x400" width="1500px" height="400px" alt="we deliver" />
   <div class="text">
-    <h1>
+    <H1>
       we deliver
-    </h1>
-    <h2>if you are in Berlin</h2>
+    </H1>
+    <H2>if you are in Berlin</H2>
   </div>
 </section>
