@@ -8,7 +8,6 @@
 <style>
   footer {
     grid-area: site-footer;
-    position: relative;
     display: grid;
     grid-template-rows: auto 6rem;
     grid-template-columns: 1fr 2fr 1fr; 

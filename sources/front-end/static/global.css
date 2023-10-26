@@ -49,17 +49,19 @@
   }
 }
 
-html, body {
+/* html, body {
   display: flex;
   flex-direction: column;
   flex: 1 0 100%;
-}
+} */
 
 html, body {
   display: flex;
   flex-direction: column;
-  height: 100%;
   overflow-y: auto;
+  min-height: 100%;
+
+  background-color: brown;
 }
 
 html {
@@ -77,22 +79,27 @@ html {
 #app {
   display: grid;
   grid-template-columns: 1fr;
-  grid-auto-columns: 1fr;
   row-gap: 1rem;
   grid-template-areas:
     'site-header'
     'site-main'
     'site-footer'
   ;
+  /* grid-template-rows: 5rem 100% auto; */
+  grid-template-rows: 5rem 1fr auto;
+  /* min-height: 100%; */
+
+  background-color: whitesmoke;
 }
 
 main {
   grid-area: site-main;
   display: flex;
   flex-direction: column;
+  flex: 1 0 100%;
   row-gap: 2vh;
-  overflow-y: auto;
-  min-height: 100%;
+
+  min-height: 100vh;
 }
 
 svg {
