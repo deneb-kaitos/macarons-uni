@@ -13,6 +13,12 @@
     & > h1 {
       font-size: 6rem;
     }
+
+    & > :is(h1, h2) {
+      width: 75%;
+      margin: 0 10%;
+      padding: 0;
+    }
   }
 </style>
 
