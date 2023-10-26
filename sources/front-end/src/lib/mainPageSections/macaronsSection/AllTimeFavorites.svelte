@@ -1,4 +1,5 @@
 <script>
+  import H1 from "$lib/controls/h1/H1.svelte";
 
 </script>
 
@@ -58,7 +59,7 @@
 </style>
 
 <section>
-  <h1>all time favorites</h1>
+  <H1>all time favorites</H1>
   <div class="fav0">
     <img src="https://fakeimg.pl/800x800" width="800px" height="800px" alt="0" />
     <h2>some macaron</h2>

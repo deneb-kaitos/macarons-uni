@@ -5,6 +5,7 @@
     InstagramIcon,
     TwitterIcon,
   } from 'svelte-feather-icons';
+  import H1 from '$lib/controls/h1/H1.svelte';
   
   let iconSize = "48";
 </script>
@@ -109,9 +110,9 @@
 </style>
 
 <address>
-  <h1>
+  <H1>
     we're open
-  </h1>
+  </H1>
     <div class="first-work-day align-left">monday</div>
     <div class="last-work-day align-left">friday</div>
     <div class="work-day-start-time align-right">11:00</div>
