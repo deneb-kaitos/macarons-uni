@@ -1,5 +1,5 @@
 <style>
-h1, h2 {
+h1 {
   padding: 1rem 0;
 }
 
@@ -63,8 +63,8 @@ h1, h2 {
   }
 </style>
 
-<h1>contact us</h1>
-<h2>drop us a line</h2>
+<h1>drop us a line</h1>
+<!-- <h2>drop us a line</h2> -->
 <form id="contact-us-form">
     <div class="first-name">
       <label for="first-name-id">first name</label>
