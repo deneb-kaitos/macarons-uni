@@ -1,3 +1,6 @@
+<script>
+  import H1 from "$lib/controls/h1/H1.svelte";
+</script>
 <style>
   section {
     display: grid;
@@ -60,23 +63,23 @@
 <section>
   <a href="/uni/complete-macarons" class="step0">
     <img src="https://fakeimg.pl/600x600" width="600px" height="600px" alt="step 0" />
-    <h1>
+    <H1>
      macarons 
-    </h1>
+    </H1>
     <div>some description</div>
   </a>
   <a href="/uni/macarons-caps" class="step1">
     <img src="https://fakeimg.pl/600x600" width="600px" height="600px" alt="step 1" />
-    <h1>
+    <H1>
       macaron caps
-    </h1>
+    </H1>
     <div>some description</div>
   </a>
   <a href="/uni/torten" class="step2">
     <img src="https://fakeimg.pl/600x600" width="600px" height="600px" alt="step 2" />
-    <h1>
+    <H1>
       cakes
-    </h1>
+    </H1>
     <div>some description</div>
   </a>
 </section>
