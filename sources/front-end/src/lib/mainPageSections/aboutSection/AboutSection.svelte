@@ -65,6 +65,10 @@
   }
   section:hover a:hover {
     filter: opacity(1.0) blur(0);
+
+    & > img {
+      filter: drop-shadow(0 0 0.25rem var(--theme-darkest_white));
+    }
   }
 </style>
 
