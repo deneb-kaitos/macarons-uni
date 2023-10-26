@@ -54,7 +54,7 @@
       grid-area: submit;
       display: flex;
       justify-content: center;
-      align-items: center;
+      align-items: end;
       
       & button[type="submit"] {
         min-width: 8rem;

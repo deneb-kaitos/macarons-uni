@@ -19,6 +19,7 @@
     padding: max(0.5vh, 0.5vw);
     max-height: 6rem;
     color: var(--theme-white);
+    font-variant: all-petite-caps;
   }
 </style>
 

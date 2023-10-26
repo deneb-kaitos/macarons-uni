@@ -23,6 +23,7 @@
       ;
       padding: max(1vh, 1vw) max(1vh, 1vw);
       background-color: white;
+      filter: opacity(0.9);
 
       & > img {
         grid-area: picture;
@@ -57,6 +58,13 @@
     & > .step2 {
       grid-area: step2;
     }
+  }
+
+  section:hover a:not(:hover) {
+    filter: opacity(0.75) blur(1px);
+  }
+  section:hover a:hover {
+    filter: opacity(1.0) blur(0);
   }
 </style>
 
