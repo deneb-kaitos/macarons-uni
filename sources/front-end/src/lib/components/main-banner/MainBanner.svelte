@@ -1,3 +1,6 @@
+<script>
+  import H1 from "$lib/controls/h1/H1.svelte";
+</script>
 <style>
   div {
     top: 25%;
@@ -16,7 +19,7 @@
   <h2>
     open for delivery & pick up
   </h2>
-  <h1>
+  <H1>
     get it while it's hot
-  </h1>
+  </H1>
 </div>
