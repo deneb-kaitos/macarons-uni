@@ -1,5 +1,6 @@
 <script>
   export const prerender = true;
+  import H1 from "$lib/controls/h1/H1.svelte";
 </script>
 
 <style>
@@ -39,9 +40,9 @@
 
 <section>
   <div class="card">
-    <h1>
+    <H1>
       special of the week
-    </h1>
+    </H1>
     <h2>
       your new guilty pleasure
     </h2>
