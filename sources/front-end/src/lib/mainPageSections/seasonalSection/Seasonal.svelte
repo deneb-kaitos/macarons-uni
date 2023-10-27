@@ -13,7 +13,7 @@
     grid-template-areas:
       'card picture'
     ;
-    column-gap: 2vw;
+    /* column-gap: 2vw; */
   
     & > .card { 
       grid-area: card;
