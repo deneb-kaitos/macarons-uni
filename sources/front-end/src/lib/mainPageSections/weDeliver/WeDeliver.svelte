@@ -15,6 +15,7 @@
 
     & > img {
       grid-area: picture;
+      width: 100%;
     }
 
     & > .text {
