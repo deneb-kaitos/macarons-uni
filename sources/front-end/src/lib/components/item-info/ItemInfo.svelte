@@ -54,14 +54,13 @@
     column-gap: 1rem;
     padding: min(1vh, 1vw);
     background-color: white;
+    color: var(--main-color);
 
     & > .item-picture {
       grid-area: item-picture;
       display: flex;
       justify-content: center;
       align-items: center;
-
-      background-color: yellowgreen;
 
       & > picture {
         aspect-ratio: 1 / 1;
@@ -83,12 +82,13 @@
       & > :is(h1, h2) {
         display: flex;
         justify-content: end;
-        align-items: center;
+        align-items: baseline;
         padding: 0;
       }
 
       & > :is(h1) {
-        font-size: 10rem;
+        font-size: 12rem;
+        line-height: 10rem;
       }
 
       & > :is(h2) {
