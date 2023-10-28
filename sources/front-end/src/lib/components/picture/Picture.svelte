@@ -67,10 +67,7 @@
       }
     }
 
-    console.debug(pictureSources);
-
     pictureSources = pictureSources;
-
   };
 
   onMount(() => {
